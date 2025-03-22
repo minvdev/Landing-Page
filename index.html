@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="logo">
+      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="logo" />
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">features</a></li>
+        <li><a class="nav-link" href="#how-it-works">how it works</a></li>
+        <li><a class="nav-link" href="#pricing">pricing</a></li>
+      </ul>
+      <!-- You can see at least three clickable elements inside the nav element, each with the class nav-link -->
+      <!-- When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page -->
+    </nav>
+  </header>
+
+  <section id="hero">
+    <header class="hero-header">
+      <h1 class="hero-title">Handcrafted, home-made masterpieces</h1>
+      <h2 class="hero-subtitle">The better sound you can hear</h2>
+    </header>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <input required type="email" name="email" id="email" placeholder="Enter your email here">
+      <input id="submit" type="submit" value="Get Started">
+    </form>
+    <div id="features">
+      <div class="grid">
+        <i class="fas fa-truck"></i>
+        <h1>Fast shipping</h1>
+        <p>
+          We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns
+          if you are not satisfied.
+          </p=>
+      </div>
+      <div class="grid">
+        <i class="fas fa-fire"></i>
+        <h1>Premium Materials</h1>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+          purchase.
+          </p=>
+      </div>
+      <div class="grid">
+        <i class="fas fa-check-circle"></i>
+        <h1>Quality Assurance</h1>
+        <p>
+          For every purchase you make, we will ensure there are no damages or faults and we will check and test the
+          pitch of your instrument.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </section>
+
+  <section id="pricing">
+    <div class="item">
+      <div class="name">
+        <h2>Tenor Trombone</h2>
+      </div>
+      <div class="price">
+        <p>600</p>
+      </div>
+      <div class="description">
+        <p>Standard in orchestras, jazz bands, and school ensembles.</p>
+        <p>Uses a telescoping slide to change pitch instead of valves.</p>
+        <p>Typically has a bore size between 0.500" and 0.547", balancing ease of play and tonal richness.</p>
+        <p>Some models include an extra tubing section with a trigger to extend the range.</p>
+      </div>
+      <button>Order</button>
+    </div>
+    <div class="separator"></div>
+    <div class="item">
+      <div class="name">
+        <h2>Bass Trombone</h2>
+      </div>
+      <div class="price">
+        <p>900</p>
+      </div>
+      <div class="description">
+        <p>Usually between 0.562" and 0.578", producing a deeper, richer sound.</p>
+        <p>Typically 9.5” to 10.5” in diameter for a fuller, more resonant tone.</p>
+        <p>Often features two rotary valves (F and D or Gb) for greater range flexibility.</p>
+        <p>Designed for playing in the bass register, requiring more air support.</p>
+      </div>
+      <button>Order</button>
+    </div>
+    <div class="separator"></div>
+    <div class="item">
+      <div class="name">
+        <h2>Valve Trombone</h2>
+      </div>
+      <div class="price">
+        <p>1200</p>
+      </div>
+      <div class="description">
+        <p>Similar to a trumpet, it has three or four valves instead of a slide.</p>
+        <p>Allows quicker technical passages compared to slide trombones.</p>
+        <p>Popular in mariachi and jazz due to its agility and bright tone.</p>
+        <p>Often shares bore and bell sizes with standard tenor trombones.</p>
+      </div>
+      <button>Order</button>
+    </div>
+  </section>
+
+  <footer>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+      <li>Copyright 2016, Original Trombones</li>
+    </ul>
+  </footer>
+</body>
+
+</html>
